@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra email</title>
+</head>
+<body>
+<script>
+    regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(.[A-Za-z0-9]+)$/;
+    function checkEmail(str) {
+        if (regexp.test(str)) {
+            return true;
+        } else {
+            return  false;
+        }
+    }
+
+    let email = 'hailit@gmail.com';
+    alert(checkEmail(email));
+    let Email = '@gmail.com';
+    alert(checkEmail(Email));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tên lớp học</title>
+</head>
+<body>
+<script>
+    regexp =/^[CAP]+[0-9]{4,}[GHIKLM]$/;
+    function checkLop(str) {
+        if (regexp.test(str)){
+            return true;
+        } else {
+            return  false
+        }
+    }
+    let lop ='C0318G';
+    alert(checkLop(lop));
+    let Lop= 'P0323A';
+    alert(checkLop(Lop));
+</script>
+</body>
+</html>
