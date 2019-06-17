@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viettel</title>
+</head>
+<body>
+<script>
+    let Viettel = ['0973967200', '0396355470', '0967045028', '023456789'];
+    regexp = /^((03[2-9])|086|(09[6-8]))+([0-9]{6,7})\b$/;
+
+    function checkViettel(str) {
+        if (regexp.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    for (let i = 0; i < Viettel.length; i++) {
+        if (checkViettel(Viettel[i])) {
+            alert(Viettel[i] + " đầu số Viettel");
+        } else {
+            alert(Viettel[i] +" không phải đầu số Viettel");
+        }
+    }
+
+</script>
+</body>
+</html>
