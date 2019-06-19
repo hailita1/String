@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+<script>
+    let string = "Tôi yêu ngôn ngữ lập trình Javascript";
+    cout = 0;
+    dem = 1;
+    string.split();
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] == "a") {
+            cout++;
+        }
+    }
+    document.write(cout);
+    document.write("<br/>");
+    document.write(string.split(" "));
+    for (i = 0; i < string.length; i++) {
+        if (string[i] == " ") {
+            dem++;
+        }
+    }
+    document.write("<br/>");
+    document.write(dem)
+    for (i = 0; i < string.length; i++) {
+        if (string[i] == 'Javascript') {
+            string[i] = 'Typescript';
+        }
+    }
+    document.write("<br/>");
+    document.write(string);
+
+
+</script>
+</body>
+</html>
