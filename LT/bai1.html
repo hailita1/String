@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    function isDate(str) {
+        let regexp = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+        if (regexp.test(str)) {
+            alert("true")
+        } else {
+            alert("false")
+        }
+    }
+    isDate("1000");
+    isDate("10/1/1999")
+</script>
+</body>
+</html>
